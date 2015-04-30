@@ -6,7 +6,7 @@
   <title><?php wp_title('|', true, 'right'); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/assets/img/favicon.png' ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 
   <?php wp_head(); ?>
 

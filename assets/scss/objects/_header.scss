@@ -1,6 +1,8 @@
 header.banner {
     padding: 0 $pad-half;
-    border-bottom: 4px solid $red;
+    border-top: 4px solid $red;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.75);
 
     .columns {
         padding: 0 $pad-half;

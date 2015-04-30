@@ -14,10 +14,10 @@
   <div class="off-canvas-wrap">
     <div class="inner-wrap">
 
-      <div class="wrap row bg--white" role="document">
+      <div class="wrap row" role="document">
         <?php get_template_part('templates/header'); ?>
 
-        <div class="content row">
+        <div class="content row bg--white">
           <main class="main" role="main">
             <?php get_template_part('templates/teaser-element'); ?>
             <?php include roots_template_path(); ?>

@@ -10,7 +10,8 @@ $blue :         #88DEFB;
 $green_2 :      #BAD8BC;
 $blue_2 :       #ACF0FB;
 
-$blue_3 :       #099AAB;
+$blue_3 :       #076B77;
+$green_3 :      #C2EBC5;
 
 $red :          $blue_3;
 $gray-lighter : #f8f3f3;
@@ -34,7 +35,7 @@ $brand-linkedin: #217bc1;
 
 //Typography
 $font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-$font-secondary : 'Cuprum', sans-serif;
+$font-secondary : 'Ubuntu', sans-serif;
 
 $font-size-norm : 1rem;
 $font-size-slightly-larger : 1.0625rem;
@@ -45,7 +46,7 @@ $font-size-large-2 : 1.75rem;
 $font-size-largest : 2rem;
 
 //Layout
-$max-width: 64rem;
+$max-width: 75rem;
 $offset-left-1: 4.5rem;
 
 $l-sidebar-width: 19.75rem;
