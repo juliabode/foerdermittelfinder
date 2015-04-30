@@ -1,0 +1,50 @@
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid $gray-light;
+    color: $gray-dark;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    width: 100%;
+
+    @media all and (min-width: $bp-med) {
+        width: 50%;
+    }
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="submit"],
+button {
+    @include transition(all, 50ms, ease-in-out);
+    text-transform: uppercase;
+    padding: 10px 30px;
+    @extend .special-box;
+
+    &::before,
+    &::after {
+        content: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.form-group {
+    margin-bottom: 11px;
+}
+
+.search-form {
+    margin-top: 20px;
+}

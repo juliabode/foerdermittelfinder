@@ -1,0 +1,38 @@
+.service-tile {
+    margin: 20px auto 30px;
+    border-radius: 2px 2px 0 0;
+    @include linear-gradient($gray-lighter, $white);
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+        margin: 0;
+        padding: 10px 20px;
+        position: relative;
+        text-transform: uppercase;
+        border-top: 1px solid $red;
+        border-bottom: 3px double $red;
+        @include font-size(1.8, 1.8);
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $white;
+            height: 1px;
+            width: 100%;
+            border-top: none;
+        }
+    }
+
+    img {
+    }
+
+    p {
+        padding: 10px 20px;
+        @include font-size(1.4, 2.4);
+        margin: 0;
+    }
+}

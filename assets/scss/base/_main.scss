@@ -1,0 +1,47 @@
+html, body {
+    font: 100%/1.5 $font;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, $blue_2, $green_2), url("../img/bg.png");
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+
+    @media all and (min-width: $bp-med) {
+        padding-top: $space-double;
+    }
+}
+
+.wrap {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    padding-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+a {
+    color: $red;
+
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+
+iframe {
+    max-width: 100%;
+}
+
+ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.hide {
+    display: none;
+}

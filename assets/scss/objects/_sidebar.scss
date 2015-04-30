@@ -1,0 +1,84 @@
+.sidebar {
+    padding: 10px 30px 30px;
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $red;
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    .widget {
+        margin-bottom: 30px;
+    }
+
+    .widget_recent_entries,
+    .recent-posts-extended,
+    .popular-posts {
+
+        li {
+            border-bottom: 1px solid $gray-light;
+            padding: 0 0 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+
+            &:last-child {
+                border: none;
+            }
+
+            > a {
+                max-width: 78px;
+                float: left;
+            }
+        }
+
+        a {
+            color: $gray-dark;
+            font-size: 12px;
+            line-height: 16px;
+            display: block;
+            font-family: $font;
+        }
+
+        img {
+            margin-right: 8px;
+            margin-bottom: 4px;
+            margin-left: 0;
+        }
+
+        time {
+            display: none;
+        }
+
+    }
+
+    .popular-posts .wpp-post-title {
+        max-width: initial;
+        float: none;
+    }
+
+    @media all and (min-width: $bp-med) {
+        position: relative;
+        width: 30%;
+        margin: 15px -66px 30px;
+        float: right;
+    }
+
+    @media all and (min-width: $bp-med) {
+        &:after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid $gray-darker;
+            border-right: 25px solid transparent;
+            background: transparent;
+            left: initial;
+        }
+    }
+}

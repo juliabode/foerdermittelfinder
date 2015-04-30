@@ -1,0 +1,30 @@
+.content {
+    p {
+        margin: $space 0;
+    }
+
+    ul:not(.alternative-list) {
+        padding-left: 0;
+        margin-left: 1em;
+        list-style-type: none;
+
+        li {
+            position: relative;
+
+            &:before {
+                content: "\f0da";
+                font-family: FontAwesome;
+                padding-right: 8px;
+                color: $red;
+            }
+        }
+    }
+
+    aside ul {
+        margin-left: 0 !important;
+
+        li:before {
+            content: none !important;
+        }
+    }
+}

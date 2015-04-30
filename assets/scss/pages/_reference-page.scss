@@ -1,0 +1,42 @@
+.reference-list ul {
+    list-style: none;
+    line-height: 32px;
+
+    li {
+        margin-bottom: 3px;
+        padding-left: 10px;
+        line-height: 0; /* display-inline margin bug?! */
+
+        &:nth-child(2n+1) {
+            background: $gray-red;
+        }
+
+        &:nth-child(2n) {
+            background: $gray-lighter;
+        }
+
+        div {
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:first-child {
+                line-height: 22px;
+            }
+        }
+    }
+
+    .fa {
+        color: $red;
+        line-height: 32px;
+    }
+
+    .fa-li {
+        top: 0;
+    }
+
+    img {
+        max-height: 80px;
+        margin: 30px 0;
+    }
+}

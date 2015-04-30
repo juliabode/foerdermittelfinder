@@ -1,0 +1,21 @@
+header.banner {
+    padding: 0 $pad-half;
+    border-bottom: 4px solid $red;
+
+    .columns {
+        padding: 0 $pad-half;
+    }
+}
+
+a.brand {
+    text-indent: -99999px;
+    display: block;
+    background-image: url("../img/logo.png");
+    height: 85px;
+    background-repeat: no-repeat;
+    margin: $space auto;
+    background-size: 100%;
+    max-width: 400px;
+    background-position: center bottom;
+    background-size: contain;
+}
