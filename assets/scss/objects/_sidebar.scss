@@ -59,26 +59,4 @@
         max-width: initial;
         float: none;
     }
-
-    @media all and (min-width: $bp-med) {
-        position: relative;
-        width: 30%;
-        margin: 15px -66px 30px;
-        float: right;
-    }
-
-    @media all and (min-width: $bp-med) {
-        &:after {
-            content: "";
-            position: absolute;
-            top: -10px;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-bottom: 10px solid $gray-darker;
-            border-right: 25px solid transparent;
-            background: transparent;
-            left: initial;
-        }
-    }
 }

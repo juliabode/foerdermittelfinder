@@ -12,7 +12,7 @@ Template Name: Blog
           query_posts( 'post_type=post&orderby=date&posts_per_page=8&paged=' . $paged ); ?>
 
     <div class="row">
-        <div class="small-9 medium-9 small-12 left">
+        <div class="small-9 medium-9 small-12 column">
             <?php
                 get_template_part('templates/content', 'single');
             ?>

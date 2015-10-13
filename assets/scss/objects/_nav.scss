@@ -59,8 +59,21 @@ li.dropdown:hover .dropdown-menu {
 }
 
 .social-nav {
-    margin: 7px 0;
     min-height: 35px;
+
+    span {
+        padding: 10px 0 5px 10px;
+        margin-left: 10px;
+        border-left: 1px solid #076b77;
+        font-size: 14px;
+        font-family: $font;
+
+        &::before {
+            font-family: FontAwesome;
+            color: $blue_3;
+            padding-right: 5px;
+        }
+    }
 }
 
 .mobile-header {

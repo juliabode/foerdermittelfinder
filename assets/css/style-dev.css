@@ -207,7 +207,7 @@ html, body {
 
 body {
   margin: 0;
-  background: linear-gradient(to bottom, #acf0fb, #bad8bc), url("../img/bg.png");
+  background: linear-gradient(to bottom, rgba(172, 240, 251, 0.5), rgba(186, 216, 188, 0.5)), url("../img/bg.png");
   background-attachment: fixed;
   background-repeat: repeat;
   background-blend-mode: multiply;
@@ -6281,6 +6281,11 @@ a.brand {
   background-position: center bottom;
   background-size: contain;
 }
+@media all and (min-width: 46.8em) {
+  a.brand {
+    margin: 1rem 0;
+  }
+}
 
 .caret {
   display: none;
@@ -6344,8 +6349,19 @@ li.dropdown:hover .dropdown-menu {
 }
 
 .social-nav {
-  margin: 7px 0;
   min-height: 35px;
+}
+.social-nav span {
+  padding: 10px 0 5px 10px;
+  margin-left: 10px;
+  border-left: 1px solid #076b77;
+  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+.social-nav span::before {
+  font-family: FontAwesome;
+  color: #076b77;
+  padding-right: 5px;
 }
 
 .mobile-header {
@@ -6439,28 +6455,6 @@ li.dropdown:hover .dropdown-menu {
 .sidebar .popular-posts .wpp-post-title {
   max-width: initial;
   float: none;
-}
-@media all and (min-width: 46.8em) {
-  .sidebar {
-    position: relative;
-    width: 30%;
-    margin: 15px -66px 30px;
-    float: right;
-  }
-}
-@media all and (min-width: 46.8em) {
-  .sidebar:after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid #b1b1b1;
-    border-right: 25px solid transparent;
-    background: transparent;
-    left: initial;
-  }
 }
 
 .content-info {
@@ -6704,7 +6698,6 @@ ul.off-canvas-list li a:hover {
   ul.off-canvas-list {
     margin-bottom: 0;
     position: relative;
-    margin-bottom: 30px;
   }
   ul.off-canvas-list ul.dropdown-menu {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
@@ -7076,8 +7069,6 @@ a.menu-icon span {
   }
   .social-nav .social-media-links li a {
     display: block;
-    width: 100%;
-    height: 200%;
     position: relative;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -7085,80 +7076,19 @@ a.menu-icon span {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
   }
-  .social-nav .social-media-links li a:before, .social-nav .social-media-links li a:after {
-    display: block;
-    width: 20px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .social-nav .social-media-links li a:before {
-    border: 1px solid gray;
-    color: #333333;
-  }
-  .social-nav .social-media-links li a:after {
-    position: absolute;
-    height: 50%;
-    left: 0;
-    bottom: 0;
-    color: white;
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-  .social-nav .social-media-links li a.fa-facebook:after {
-    content: "\f09a";
-    background-color: #3B5998;
-  }
-  .social-nav .social-media-links li a.fa-twitter:after {
-    content: "\f099";
-    background-color: #00aced;
-  }
-  .social-nav .social-media-links li a.fa-google:before, .social-nav .social-media-links li a.fa-google:after {
+  .social-nav .social-media-links li a.fa-google:before {
     content: "\f0d5";
   }
-  .social-nav .social-media-links li a.fa-google:after {
-    background-color: #dd4b39;
-  }
-  .social-nav .social-media-links li a.fa-mail:before, .social-nav .social-media-links li a.fa-mail:after {
+  .social-nav .social-media-links li a.fa-mail:before {
     content: "\f003";
   }
-  .social-nav .social-media-links li a.fa-mail:after {
-    background-color: #f7b42c;
-  }
-  .social-nav .social-media-links li a.fa-linkedin:after {
-    content: "\f0e1";
-    background-color: #517fa4;
-  }
-  .social-nav .social-media-links li a.fa-xing:after {
-    content: "\f168";
-    background-color: #006563;
-  }
-  .social-nav .social-media-links li a.fa-skype:after {
-    content: "\f17e";
-    background-color: #00aff0;
-  }
-  .social-nav .social-media-links li a.fa-youtube:after {
-    content: "\f167";
-    background-color: #ff3333;
-  }
-  .social-nav .social-media-links li a.fa-vimeo:before, .social-nav .social-media-links li a.fa-vimeo:after {
+  .social-nav .social-media-links li a.fa-vimeo:before {
     content: "\f194";
   }
-  .social-nav .social-media-links li a.fa-vimeo:after {
-    background-color: #aad450;
+  .social-nav .social-media-links li a:hover {
+    text-decoration: none;
+    color: #07535C;
   }
-  .social-nav .social-media-links li a.fa-flickr:after {
-    content: "\f16e";
-    background-color: #ff0084;
-  }
-  .social-nav .social-media-links li a.fa-rss:after {
-    content: "\f09e";
-    background-color: #ff6600;
-  }
-}
-
-.social-nav .social-media-links li:hover a {
-  margin-top: -20px;
-  text-decoration: none;
 }
 
 .accordion ul li {

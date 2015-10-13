@@ -1,15 +1,12 @@
 <div class="bg--red mobile-header">
     <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-    <div class="choose-lang">
-        <?php if ( function_exists(qtrans_generateLanguageSelectCode) ) echo qtrans_generateLanguageSelectCode(); ?>
-    </div>
 </div>
 
 <header class="banner row" role="banner">
     <div class="small-12 medium-4 large-5 columns">
         <a class="brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
     </div>
-    <nav class="social-nav">
+    <nav class="social-nav hide-small medium-8 large-7 columns alignright">
         <div class="social-media-wrapper">
             <?php get_template_part('templates/social_media_icons'); ?>
         </div>

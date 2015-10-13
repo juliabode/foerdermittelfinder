@@ -20,4 +20,8 @@ a.brand {
     max-width: 400px;
     background-position: center bottom;
     background-size: contain;
+
+    @media all and (min-width: $bp-med) {
+        margin: $space 0;
+    }
 }

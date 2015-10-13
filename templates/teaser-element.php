@@ -19,7 +19,7 @@
 
     } else if ( is_front_page() ) {
 
-        $slider_or_image = do_shortcode( '[responsive_slider]' );
+        $slider_or_image = do_shortcode( '[fraction_slider]' );
 
     } else if ( $page_parent_animation ) {
 
